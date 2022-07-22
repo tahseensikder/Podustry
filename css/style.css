@@ -1,0 +1,132 @@
+/*
+Theme Name: Produstry
+Version : 1.0.1
+Author Name: Creative IT 
+Author URI: #
+*/
+/* 
+Table Of Content
+==============================
+1. Common Css 
+2. Homepage
+    i. header section
+*/
+
+/* Common Css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,span,p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+:root{
+    --primary_color: #ffca36;
+    --secondary_color: #555555;
+    --heading_text: #353535;
+    --footer_text: #dddddd;
+    --white_text: #ffffff;
+}
+/* Common Css ends here */
+
+/* ~~~~Homepage Starts here~~~~ */
+
+/* header section starts here */
+header{
+    background-color: var(--primary_color);
+    font-size: 14px;
+}
+header .addText{
+    background-color: var(--primary_color);
+}
+header .welcomeText{
+    background-color: var(--heading_text);
+    text-align: center;
+    clip-path: polygon(8% 1%, 100% 0%, 93% 100%, 0% 100%);
+    color:var(--white_text) ;
+    padding: 13px 0;
+}
+header .socialLinks{
+    background-color: var(--primary_color);
+}
+header .socialLinks ul{
+    text-align: left;
+}
+header .socialLinks ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 23px;
+}
+header .socialLinks ul li::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(56, 10, 10);
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+header .socialLinks ul li::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(56, 10, 10);
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+header .socialLinks ul li a{
+    font-size: 14px;
+    display: block;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: var(--heading_text);
+}
+header .socialLinks ul li a::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(56, 10, 10);
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+header .socialLinks ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(56, 10, 10);
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+header .socialLinks ul li:hover::after,
+header .socialLinks ul li:hover::before,
+header .socialLinks ul li:hover a::before,
+header .socialLinks ul li:hover a::after{
+    transform: scale(1.4);
+}
+/* header section ends here */
+
+/* ~~~~Homepage ends here ~~~~*/

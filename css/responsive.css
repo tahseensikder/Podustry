@@ -1,0 +1,20 @@
+/* Header starts here */
+@media (min-width: 320px) and (max-width: 992px) {
+    header .addText {
+        text-align: center;
+        padding: 5px 0;
+    }
+    header .socialLinks ul {
+        text-align: center;
+    }
+    header .welcomeText {
+        clip-path: none;
+    }
+    /* header{
+        background-color: transparent;
+    } */
+    header .socialLinks ul li {
+        margin-right: 10px;
+    }
+}
+/* Header Ends here */
