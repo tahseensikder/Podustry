@@ -20,6 +20,12 @@
     header .socialLinks ul li {
         margin-right: 10px;
     }
+    header .socialLinks ul li::after,
+    header .socialLinks ul li::before,
+    header .socialLinks ul li a::before,
+    header .socialLinks ul li a::after{
+        transition: all linear 0.1s;
+    }
     header .socialLinks ul li:hover::after,
     header .socialLinks ul li:hover::before,
     header .socialLinks ul li:hover a::before,
