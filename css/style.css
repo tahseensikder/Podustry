@@ -61,12 +61,12 @@ header .socialLinks{
     background-color: var(--primary_color);
 }
 header .socialLinks ul{
-    text-align: left;
+    text-align: right;
 }
 header .socialLinks ul li{
     position: relative;
     display: inline-block;
-    margin-right: 23px;
+    margin-left: 18px;
 }
 header .socialLinks ul li::after{
     content: "";

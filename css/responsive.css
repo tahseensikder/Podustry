@@ -3,6 +3,10 @@
     header .addText {
         text-align: center;
         padding: 5px 0;
+        font-size: 12px;
+    }
+    header .socialLinks {
+        padding: 4px 0;
     }
     header .socialLinks ul {
         text-align: center;
@@ -15,6 +19,20 @@
     } */
     header .socialLinks ul li {
         margin-right: 10px;
+    }
+    header .socialLinks ul li:hover::after,
+    header .socialLinks ul li:hover::before,
+    header .socialLinks ul li:hover a::before,
+    header .socialLinks ul li:hover a::after {
+        transform: scale(1.2);
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    header .addText p{
+        font-size: 12px;
+    }
+    header .socialLinks ul li {
+        margin-left: 10px;
     }
 }
 /* Header Ends here */
