@@ -24,7 +24,7 @@
     header .socialLinks ul li::before,
     header .socialLinks ul li a::before,
     header .socialLinks ul li a::after{
-        transition: all linear 0.1s;
+        transition: all linear;
     }
     header .socialLinks ul li:hover::after,
     header .socialLinks ul li:hover::before,
