@@ -130,6 +130,73 @@ header .socialLinks ul li:hover a::after{
 }
 /* header section ends here */
 /* navbar starts */
-
+nav a img{
+    padding: 16px;
+}
+nav #myCusNav ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+nav #myCusNav ul li::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary_color);
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+nav #myCusNav ul li::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary_color);
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+nav #myCusNav ul li a{
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+    color: var(--heading_text);
+    transition: all linear 0.3s;
+}
+nav #myCusNav ul li:hover a{
+    color: var(--primary_color);
+}
+nav #myCusNav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary_color);
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+nav #myCusNav ul li a::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary_color);
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+nav #myCusNav ul li:hover::after,
+nav #myCusNav ul li:hover::before,
+nav #myCusNav ul li:hover a::after,
+nav #myCusNav ul li:hover a::before{
+    transform: scale(1.2);
+}
 /* navbar ends */
 /* ~~~~Homepage ends here ~~~~*/

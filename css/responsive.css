@@ -18,7 +18,7 @@
         background-color: transparent;
     } */
     header .socialLinks ul li {
-        margin-right: 10px;
+        margin-right: 0;
     }
     header .socialLinks ul li::after,
     header .socialLinks ul li::before,
@@ -32,6 +32,16 @@
     header .socialLinks ul li:hover a::after {
         transform: scale(1.2);
     }
+    nav #myCusNav ul li a {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+    nav #myCusNav ul li::after,
+    nav #myCusNav ul li::before,
+    nav #myCusNav ul li a::after,
+    nav #myCusNav ul li a::before{
+        display: none;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     header .addText p{
@@ -42,3 +52,7 @@
     }
 }
 /* Header Ends here */
+
+/* nav starts here */
+
+/* nav ends here */
