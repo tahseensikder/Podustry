@@ -35,6 +35,8 @@
     nav #myCusNav ul li a {
         font-size: 14px;
         padding: 5px 0;
+        text-align: center;
+}
     }
     nav #myCusNav ul li::after,
     nav #myCusNav ul li::before,
