@@ -52,6 +52,43 @@
         margin-left: 10px;
     }
 }
+@media (min-width:992px){
+    nav #myCusNav ul{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in;
+    }
+    nav #myCusNav .activeMenu{
+        opacity: 1;
+        transition: 0.3s ease-in;
+        visibility: visible;
+    }
+    nav #myCusNav .btn_toggler{
+        position: absolute;
+        right: 0;
+        transition: all linear 0.5s;
+    }
+    nav #myCusNav .btn_toggler:hover{
+        color: var(--primary_color);
+    }
+    nav{
+        min-height: 100px;
+    }
+    nav .container{
+        position: relative;
+    }
+    nav .navLogo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s ease-in-out;
+    }
+    nav .activeLogo{
+        left: 0%;
+        transform: translateX(0%);
+        transition: 0.5s ease-in-out;
+    }
+}
 /* Header Ends here */
 
 /* nav starts here */
