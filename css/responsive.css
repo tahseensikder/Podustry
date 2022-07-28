@@ -80,7 +80,7 @@
     nav .navLogo{
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-52%);
         transition: 0.5s ease-in-out;
     }
     nav .activeLogo{

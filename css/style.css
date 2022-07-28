@@ -38,6 +38,7 @@ ul,ol{
     --heading_text: #353535;
     --footer_text: #dddddd;
     --white_text: #ffffff;
+    --overlay: rgba(0, 0, 0,0.7);
 }
 /* Common Css ends here */
 
@@ -199,4 +200,268 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.2);
 }
 /* navbar ends */
+
+/* banner starts here */
+#banner{
+    position: relative;
+}
+#banner .left_arrow{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    left: 30px;
+    font-size: 50px;
+    color: var(--white_text);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all linear 0.5s;
+}
+#banner .left_arrow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .left_arrow::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .left_arrow span{
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.5s;
+}
+#banner .left_arrow span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .left_arrow span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .right_arrow{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    right: 30px;
+    font-size: 50px;
+    color: var(--white_text);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all linear 0.5s;
+}
+#banner .right_arrow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .right_arrow::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .right_arrow span{
+    height: 50px;
+    width: 50px;
+}
+#banner .right_arrow span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .right_arrow span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#banner .left_arrow:hover,
+#banner .right_arrow:hover{
+    color: var(--primary_color);
+}
+#banner .left_arrow:hover::before,
+#banner .left_arrow:hover::after,
+#banner .right_arrow:hover::before,
+#banner .right_arrow:hover::after,
+#banner .right_arrow:hover span::before,
+#banner .right_arrow:hover span::after,
+#banner .left_arrow:hover span::before,
+#banner .left_arrow:hover span::after{
+    background-color: var(--primary_color);
+}
+#banner .slider_item{
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+#banner .slider_item::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background:var(--overlay) ;
+    z-index: -1;
+}
+#banner .banner_content h3{
+    color: var(--white_text);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 16px 0;
+}
+#banner .banner_content h3 span{
+    color: var(--primary_color);
+    font-weight: 700;
+}
+#banner .banner_content p{
+    color: var(--footer_text);
+    font-size: 14px;
+    padding-top: 16px;
+    margin-bottom: 60px;
+}
+#banner .banner_content a{
+    height: 50px;
+    width: 160px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 30px;
+    outline: solid 1px var(--white_text);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white_text);
+    background-color: transparent;
+    transition: all linear 0.5s;
+}
+#banner .banner_content a:hover{
+    background-color: var(--primary_color);
+    color: var(--heading_text);
+    outline: none;
+}
+/* #banner .slider_icon{
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    color: var(--white_text);
+    background: none;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 30px;
+    transition: all linear 0.5s;
+    cursor: pointer;
+    z-index: 99;
+}
+#banner .fa-angle-right{
+    right: 30px;
+    left: auto;
+} */
+/* banner ends here */
+
+/* services starts here*/
+#service{
+    padding: 40px 0;
+}
+#service .service_heading{
+    text-align: center;
+    margin: 20px 0;
+}
+#service .service_heading h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+#service .service_heading p{
+    padding: 30px 0;
+    font-size: 16px;
+    color: var(--secondary_color);
+}
+#service .service_content .service_card{
+    text-align: center;
+}
+#service .service_content .service_card .service_icon{
+    height: 100px;
+    width: 100px;
+    border: 1px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    transform: rotate(45deg);
+}
+#service .service_content .service_card .service_icon::after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 1px;
+    border-left: 1px dashed black;
+    top: 92px;
+    left: 111px;
+    transform: rotate(-45deg);
+}
+#service .service_content .service_card .service_icon img{
+    transform: rotate(-45deg);
+}
+#service .service_content .service_card .service_detail{
+    margin-top: 60px;
+    padding: 60px 35px;
+    border: 1px solid black;
+}
+/* services ends here*/
 /* ~~~~Homepage ends here ~~~~*/
