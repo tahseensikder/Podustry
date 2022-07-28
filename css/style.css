@@ -393,25 +393,6 @@ nav #myCusNav ul li:hover a::before{
     color: var(--heading_text);
     outline: none;
 }
-/* #banner .slider_icon{
-    font-size: 50px;
-    height: 50px;
-    width: 50px;
-    color: var(--white_text);
-    background: none;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    top: calc(50% - 30px);
-    left: 30px;
-    transition: all linear 0.5s;
-    cursor: pointer;
-    z-index: 99;
-}
-#banner .fa-angle-right{
-    right: 30px;
-    left: auto;
-} */
 /* banner ends here */
 
 /* services starts here*/
@@ -444,6 +425,7 @@ nav #myCusNav ul li:hover a::before{
     margin: auto;
     position: relative;
     transform: rotate(45deg);
+    transition: all linear 0.5s;
 }
 #service .service_content .service_card .service_icon::after {
     position: absolute;
@@ -454,14 +436,175 @@ nav #myCusNav ul li:hover a::before{
     top: 92px;
     left: 111px;
     transform: rotate(-45deg);
+    transition: all linear 0.5s;
 }
 #service .service_content .service_card .service_icon img{
     transform: rotate(-45deg);
 }
 #service .service_content .service_card .service_detail{
     margin-top: 60px;
-    padding: 60px 35px;
+    margin-right: 10px;
+    padding: 60px 30px;
     border: 1px solid black;
+    transition: all linear 0.5s;
+}
+#service .service_content .service_card .service_detail h4{
+    font-size: 18px;
+    color: var(--heading_text);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#service .service_content .service_card .service_detail p{
+    font-size: 14px;
+    color: var(--secondary_color);
+}
+#service .service_content .service_card:hover .service_detail,
+#service .service_content .service_card:hover .service_icon::after,
+#service .service_content .service_card:hover .service_icon{
+    border-color: var(--primary_color);
+}
+#service .slick-track {
+    padding: 22px 0;
+}
+#service{
+    position: relative;
+}
+#service .left_arrow{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    left: 30px;
+    font-size: 50px;
+    color: var(--heading_text);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all linear 0.5s;
+}
+#service .left_arrow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .left_arrow::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .left_arrow span{
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.5s;
+}
+#service .left_arrow span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .left_arrow span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .right_arrow{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    right: 30px;
+    font-size: 50px;
+    color: var(--heading_text);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all linear 0.5s;
+}
+#service .right_arrow::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .right_arrow::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .right_arrow span{
+    height: 50px;
+    width: 50px;
+}
+#service .right_arrow span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .right_arrow span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#service .left_arrow:hover,
+#service .right_arrow:hover{
+    color: var(--primary_color);
+}
+#service .left_arrow:hover::before,
+#service .left_arrow:hover::after,
+#service .right_arrow:hover::before,
+#service .right_arrow:hover::after,
+#service .right_arrow:hover span::before,
+#service .right_arrow:hover span::after,
+#service .left_arrow:hover span::before,
+#service .left_arrow:hover span::after{
+    background-color: var(--primary_color);
 }
 /* services ends here*/
 /* ~~~~Homepage ends here ~~~~*/

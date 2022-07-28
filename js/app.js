@@ -13,4 +13,10 @@ $(function(){
       autoplaySpeed: 3000,
       speed: 1000,
    })
+   $('.service_content').slick({
+      slidesToShow: 3,
+      prevArrow:'.left_arrow',
+      nextArrow:'.right_arrow',
+
+   })
 })
