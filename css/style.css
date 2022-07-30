@@ -11,6 +11,9 @@ Table Of Content
 2. Homepage
     i. header section
     ii. navbar
+    iii. banner
+    iv. Services
+    v. about section
 */
 
 /* Common Css starts here */
@@ -610,4 +613,83 @@ nav #myCusNav ul li:hover a::before{
     background-color: var(--primary_color);
 }
 /* services ends here*/
+
+/* About section starts here */
+#about{
+    padding: 50px 0;
+}
+#about .about_img{
+    background-image: url(../image/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 441px;
+    text-align: right;
+    position: relative;
+}
+#about .about_img img{
+    position: absolute;
+    right: -161px;
+    height: 441px;
+}
+#about .about_content{
+    padding-left: 50px;
+    padding-right: 200px;
+}
+#about .about_content h3{
+    font-weight: 300;
+    color: var(--heading_text);
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+#about .about_content #aboutTab{
+    border-bottom: none;
+    border-bottom: 5px solid var(--footer_text);
+    margin-bottom: 16px;
+}
+#about .about_content #aboutTab li button{
+    border-color: transparent;
+    position: relative;
+    padding: 0;
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--heading_text);
+}
+#about .about_content #aboutTab li button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 5px solid var(--primary_color);
+    transition: all linear 0.3s;
+}
+#about .about_content #aboutTab li button.active::after,
+#about .about_content #aboutTab li button:hover::after{
+    width: 125px;
+}
+#about #aboutTabContent p{
+    padding: 14px 0;
+    font-size: 14px;
+    color: var(--secondary_color);
+}
+#about #aboutTabContent a {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 125px;
+    color: var(--heading_text);
+    background-color: var(--primary_color);
+    transition: all linear 0.5s;
+}
+#about #aboutTabContent a:hover{
+    color: var(--primary_color);
+    background-color: var(--heading_text);
+    border-radius: 5px;
+}
+/* about section ends here */
 /* ~~~~Homepage ends here ~~~~*/
