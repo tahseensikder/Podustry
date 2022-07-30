@@ -692,4 +692,81 @@ nav #myCusNav ul li:hover a::before{
     border-radius: 5px;
 }
 /* about section ends here */
+
+/* Portfolio starts here */
+#portfolio{
+    padding: 30px 0;
+}
+#portfolio h3{
+    text-align: center;
+    font-weight: 300;
+    color: var(--heading_text);
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+#portfolio p{
+    font-size: 16px;
+    color: var(--secondary_color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+#portfolio .portfolio_img{
+    height: 360px;
+    position: relative;
+}
+#portfolio .portfolio_img::after{
+    position: absolute;
+    content: '';
+    height: 0%;
+    width: 280px;
+    top: 0;
+    left: 12px;
+    background-color: var(--overlay);
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 52%, 0 76%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.5s;
+}
+#portfolio .portfolio_img .portfolio_info{
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    height: 0%;
+    width: 280px;
+    background-color: rgba(255, 204, 51, 0.8);
+    z-index: 1;
+    clip-path: polygon(0 60%, 100% 20%, 100% 100%, 0 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.5s;
+}
+#portfolio .portfolio_img .portfolio_info h4{
+    text-align: center;
+    font-size: 18px;
+    color: var(--heading_text);
+    padding-bottom: 10px;
+    margin-top: 140px;
+}
+#portfolio .portfolio_img:hover .portfolio_info,
+#portfolio .portfolio_img:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+#portfolio .portfolio_img:hover::after{
+    height: 100%;
+}
+#portfolio .portfolio_img:hover .portfolio_info{
+    height: 60%;
+}
+#portfolio .portfolio_info p{
+    font-size: 14px;
+}
+#portfolio .portfolio_img img{
+    height: 100%;
+    width: 280px;
+}
+/* Portfolio ends here */
+/* clip-path: polygon(0 69%, 100% 41%, 100% 100%, 0 100%);  BOTTOM */
+/* clip-path: polygon(0 0, 100% 0, 100% 41%, 0 69%); TOP */
 /* ~~~~Homepage ends here ~~~~*/
