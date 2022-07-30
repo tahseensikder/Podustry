@@ -205,7 +205,7 @@ nav #myCusNav ul li:hover a::before{
 #banner{
     position: relative;
 }
-#banner .left_arrow{
+#banner .left_arrow-banner{
     position: absolute;
     top: calc(50% - 25px);
     z-index: 9;
@@ -218,7 +218,7 @@ nav #myCusNav ul li:hover a::before{
     line-height: 50px;
     transition: all linear 0.5s;
 }
-#banner .left_arrow::before{
+#banner .left_arrow-banner::before{
     content: '';
     position: absolute;
     height: 100%;
@@ -229,7 +229,7 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .left_arrow::after{
+#banner .left_arrow-banner::after{
     content: '';
     position: absolute;
     height: 100%;
@@ -240,12 +240,12 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .left_arrow span{
+#banner .left_arrow-banner span{
     height: 50px;
     width: 50px;
     transition: all linear 0.5s;
 }
-#banner .left_arrow span::before{
+#banner .left_arrow-banner span::before{
     content: '';
     position: absolute;
     height: 1px;
@@ -256,7 +256,7 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .left_arrow span::after{
+#banner .left_arrow-banner span::after{
     content: '';
     position: absolute;
     height: 1px;
@@ -267,7 +267,7 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .right_arrow{
+#banner .right_arrow-banner{
     position: absolute;
     top: calc(50% - 25px);
     z-index: 9;
@@ -280,7 +280,7 @@ nav #myCusNav ul li:hover a::before{
     line-height: 50px;
     transition: all linear 0.5s;
 }
-#banner .right_arrow::before{
+#banner .right_arrow-banner::before{
     content: '';
     position: absolute;
     height: 100%;
@@ -291,7 +291,7 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .right_arrow::after{
+#banner .right_arrow-banner::after{
     content: '';
     position: absolute;
     height: 100%;
@@ -302,11 +302,11 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .right_arrow span{
+#banner .right_arrow-banner span{
     height: 50px;
     width: 50px;
 }
-#banner .right_arrow span::before{
+#banner .right_arrow-banner span::before{
     content: '';
     position: absolute;
     height: 1px;
@@ -317,7 +317,7 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .right_arrow span::after{
+#banner .right_arrow-banner span::after{
     content: '';
     position: absolute;
     height: 1px;
@@ -328,18 +328,18 @@ nav #myCusNav ul li:hover a::before{
     transform: scale(1.4);
     transition: all linear 0.5s;
 }
-#banner .left_arrow:hover,
-#banner .right_arrow:hover{
+#banner .left_arrow-banner:hover,
+#banner .right_arrow-banner:hover{
     color: var(--primary_color);
 }
-#banner .left_arrow:hover::before,
-#banner .left_arrow:hover::after,
-#banner .right_arrow:hover::before,
-#banner .right_arrow:hover::after,
-#banner .right_arrow:hover span::before,
-#banner .right_arrow:hover span::after,
-#banner .left_arrow:hover span::before,
-#banner .left_arrow:hover span::after{
+#banner .left_arrow-banner:hover::before,
+#banner .left_arrow-banner:hover::after,
+#banner .right_arrow-banner:hover::before,
+#banner .right_arrow-banner:hover::after,
+#banner .right_arrow-banner:hover span::before,
+#banner .right_arrow-banner:hover span::after,
+#banner .left_arrow-banner:hover span::before,
+#banner .left_arrow-banner:hover span::after{
     background-color: var(--primary_color);
 }
 #banner .slider_item{
@@ -442,9 +442,9 @@ nav #myCusNav ul li:hover a::before{
     transform: rotate(-45deg);
 }
 #service .service_content .service_card .service_detail{
-    margin-top: 60px;
-    margin-right: 10px;
+    margin:0 15px;
     padding: 60px 30px;
+    margin-top: 60px;
     border: 1px solid black;
     transition: all linear 0.5s;
 }
@@ -457,6 +457,9 @@ nav #myCusNav ul li:hover a::before{
 #service .service_content .service_card .service_detail p{
     font-size: 14px;
     color: var(--secondary_color);
+}
+#service .service_content .service_card:hover .service_detail{
+    box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.4);
 }
 #service .service_content .service_card:hover .service_detail,
 #service .service_content .service_card:hover .service_icon::after,
