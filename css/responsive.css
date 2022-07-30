@@ -234,6 +234,13 @@
         padding: 0;
     }
 }
+@media (min-width:778px) and (max-width:992px){
+    #about .about_content {
+        width: 720px;
+        margin: auto;
+        padding: 0;
+    }
+}
 
 /* Header Ends here */
 
