@@ -66,16 +66,16 @@
         line-height: 38px;
     }
     #service .left_arrow {
-        font-size: 45px;
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
     }
     #service .right_arrow {
-        font-size: 45px;
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
     }
 }
 @media (min-width:992px){
