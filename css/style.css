@@ -15,6 +15,8 @@ Table Of Content
     iv.   service
     v.    about section
     vi.   portfolio
+    vii.  counter
+    viii. blog
 */
 
 /* Common Css starts here */
@@ -806,7 +808,108 @@ nav #myCusNav ul li:hover a::before{
 }
 /* Counter section ends here */
 
-
+/* Blog starts here */
+#blog{
+    margin: 50px 0;
+}
+#blog h3{
+    text-align: center;
+    font-weight: 300;
+    color: var(--heading_text);
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+#blog p{
+    font-size: 16px;
+    color: var(--secondary_color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+#blog .blog_img img{
+    width: 100%;
+}
+#blog .blog_img{
+    position: relative;
+    z-index: 99;
+    transform: translateY(50%);
+    transition: ease-in-out all 0.5s;
+}
+#blog .blog_content{
+    position: relative;
+    transform: translateY(-50%);
+    transition: ease-in-out all 0.5s;
+    padding: 58px 20px 20px 20px;
+    text-align: center;
+}
+#blog .blog_content p{
+    font-size: 13px;
+    color: var(--secondary_color);
+}
+#blog .blog_content h4{
+    font-size: 18px;
+    color: var(--heading_text);
+    padding-bottom: 20px;
+}
+#blog .blog_content a {
+    font-size: 16px;
+    color: var(--heading_text);
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 120px;
+    background-color: var(--primary_color);
+}
+#blog .blog_content .social_icon{
+    padding: 0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+#blog .blog_content .btm-text-blog{
+    padding-top: 20px;
+    font-size: 14px;
+    color: var(--secondary_color);
+}
+#blog .blog_img .blog_img_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--overlay);
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out all 0.5s;
+}
+#blog .blog_img:hover .blog_img_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#blog .blog_img .blog_img_overlay span {
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;background-color: var(--primary_color);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#blog .blogSliderContent{
+    padding: 0 30px;
+}
+#blog .blogSliderContent.slick-center .blog_img {
+    transform: translateY(0px);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  }
+#blog .blogSliderContent.slick-center .blog_content {
+    transform: translateY(-25px);
+    border: 1px solid var(--footer_text);
+  }
+/* Blog ends here */
 
 
 
