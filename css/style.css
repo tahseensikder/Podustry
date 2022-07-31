@@ -9,11 +9,12 @@ Table Of Content
 ==============================
 1. Common Css 
 2. Homepage
-    i. header section
-    ii. navbar
-    iii. banner
-    iv. Services
-    v. about section
+    i.    header section
+    ii.   navbar
+    iii.  banner
+    iv.   service
+    v.    about section
+    vi.   portfolio
 */
 
 /* Common Css starts here */
@@ -42,6 +43,7 @@ ul,ol{
     --footer_text: #dddddd;
     --white_text: #ffffff;
     --overlay: rgba(0, 0, 0,0.7);
+    --overlay_secondary: rgba(255, 204, 51, 0.8);
 }
 /* Common Css ends here */
 
@@ -736,7 +738,7 @@ nav #myCusNav ul li:hover a::before{
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: rgba(255, 204, 51, 0.8);
+    background-color: var(--overlay_secondary);
     z-index: 1;
     clip-path: polygon(0 60%, 100% 20%, 100% 100%, 0 100%);
     opacity: 0;
