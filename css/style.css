@@ -851,14 +851,14 @@ nav #myCusNav ul li:hover a::before{
     padding-bottom: 20px;
 }
 #blog .blog_content a {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--heading_text);
     font-weight: 500;
     display: block;
     margin: auto;
     text-align: center;
-    line-height: 50px;
-    height: 50px;
+    line-height: 45px;
+    height: 45px;
     width: 120px;
     background-color: var(--primary_color);
 }
@@ -869,8 +869,9 @@ nav #myCusNav ul li:hover a::before{
     line-height: 30px;
 }
 #blog .blog_content .btm-text-blog{
-    padding-top: 20px;
+    padding: 16px;
     font-size: 14px;
+    margin: 0;
     color: var(--secondary_color);
 }
 #blog .blog_img .blog_img_overlay {
@@ -899,16 +900,156 @@ nav #myCusNav ul li:hover a::before{
     border-radius: 50%;
 }
 #blog .blogSliderContent{
-    padding: 0 30px;
+    padding: 60px 30px;
 }
 #blog .blogSliderContent.slick-center .blog_img {
-    transform: translateY(0px);
+    transform: translateY(12px);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
-  }
+}
 #blog .blogSliderContent.slick-center .blog_content {
     transform: translateY(-25px);
     border: 1px solid var(--footer_text);
-  }
+}
+#blog{
+    position: relative;
+}
+#blog .blogLeft{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    left: 30px;
+    font-size: 40px;
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#blog .blogLeft::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogLeft::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogLeft span{
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.5s;
+}
+#blog .blogLeft span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogLeft span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogRight{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    right: 30px;
+    font-size: 40px;
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#blog .blogRight::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogRight::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogRight span{
+    height: 50px;
+    width: 50px;
+}
+#blog .blogRight span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogRight span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#blog .blogLeft:hover,
+#blog .blogRight:hover{
+    color: var(--primary_color);
+}
+#blog .blogLeft:hover::before,
+#blog .blogLeft:hover::after,
+#blog .blogRight:hover::before,
+#blog .blogRight:hover::after,
+#blog .blogRight:hover span::before,
+#blog .blogRight:hover span::after,
+#blog .blogLeft:hover span::before,
+#blog .blogLeft:hover span::after{
+    background-color: var(--primary_color);
+}
 /* Blog ends here */
 
 

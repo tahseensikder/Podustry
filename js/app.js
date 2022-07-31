@@ -53,14 +53,16 @@ $(function(){
          // instead of a settings object
       ]
   })
+// blog  
   $('.blogSlider').slick({
     slidesToShow:3,
     slidesToScroll: 1,
-    arrows: false,
+    prevArrow:'.blogLeft',
+    nextArrow:'.blogRight',
     centerMode: true,
     centerPadding: "0px",
   })
-
+// Counter Up 
   $('#num1').countMe(7,5);
   $('#num2').countMe(9,6);
   $('#num3').countMe(10,8);
