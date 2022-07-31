@@ -771,6 +771,45 @@ nav #myCusNav ul li:hover a::before{
     width: 280px;
 }
 /* Portfolio ends here */
+
+/* Counter section starts here */
+#counter_up{
+    background-image: url(../image/counter_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+}
+#counter_up::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay);
+    z-index: -1;
+}
+#counter_up .container .row{
+    height: 200px;
+}
+#counter_up .count h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--white_text);
+}
+#counter_up .count h3{
+    font-size: 18px;
+    color: var(--white_text);
+}
+/* Counter section ends here */
+
+
+
+
+
 /* clip-path: polygon(0 69%, 100% 41%, 100% 100%, 0 100%);  BOTTOM */
 /* clip-path: polygon(0 0, 100% 0, 100% 41%, 0 69%); TOP */
 /* ~~~~Homepage ends here ~~~~*/

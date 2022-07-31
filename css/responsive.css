@@ -106,6 +106,12 @@
         height: 340px;
         width: 220px;
     }
+    #counter_up .count h1 {
+        font-size: 32px;
+    }
+    #counter_up .count h3 {
+        font-size: 16px;
+    }
 }
 @media (min-width:992px){
     nav #myCusNav ul{
@@ -225,6 +231,19 @@
         padding-bottom: 5px;
         margin-top: 120px;
     }
+    #counter_up {
+        height: 160px;
+        margin: 30px 0;
+    }
+    #counter_up .container .row {
+        height: 160px;
+    }
+    #counter_up .count h1 {
+        font-size: 18px;
+    }
+    #counter_up .count h3 {
+        font-size: 10px;
+    }
 }
 @media (min-width:576px) and (max-width:992px){
     #service .service_content .service_card .service_icon img {
@@ -267,6 +286,12 @@
         padding-bottom: 5px;
         margin-top: 110px;
     }
+    #counter_up .count h1 {
+        font-size: 22px;
+    }
+    #counter_up .count h3 {
+        font-size: 14px;
+    }
 }
 @media (min-width:778px) and (max-width:992px){
     #about .about_content {
@@ -285,6 +310,12 @@
     #portfolio .portfolio_img .portfolio_info h4 {
         padding-bottom: 6px;
         margin-top: 125px;
+    }
+    #counter_up .count h1 {
+        font-size: 26px;
+    }
+    #counter_up .count h3 {
+        font-size: 18px;
     }
 }
 @media (min-width:1200px) and (max-width:1399px){

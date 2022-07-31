@@ -52,5 +52,11 @@ $(function(){
          // settings: "unslick"
          // instead of a settings object
       ]
-   })
+  })
+
+  $('#num1').countMe(7,5);
+  $('#num2').countMe(9,6);
+  $('#num3').countMe(10,8);
+  $('#num4').countMe(11,9);
+
 })
