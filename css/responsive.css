@@ -43,6 +43,9 @@
     nav #myCusNav ul li a::before{
         display: none;
     }
+    #about .about_content h3 {
+        text-align: center;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     header .addText p{
@@ -95,6 +98,13 @@
     }
     #about .about_content #aboutTab li button.active::after, #about .about_content #aboutTab li button:hover::after {
         width: 100px;
+    }
+    #portfolio .portfolio_img img {
+        width: 220px;
+    }
+    #portfolio .portfolio_img {
+        height: 340px;
+        width: 220px;
     }
 }
 @media (min-width:992px){
@@ -203,6 +213,18 @@
     #about .about_content #aboutTab li button.active::after, #about .about_content #aboutTab li button:hover::after {
         width: 72px;
     }
+    #portfolio .portfolio_img img {
+        width: 230px;
+    }
+    #portfolio .portfolio_img {
+        height: 310px;
+        width: 230px;
+        margin: 10px 15px;
+    }
+    #portfolio .portfolio_img .portfolio_info h4 {
+        padding-bottom: 5px;
+        margin-top: 120px;
+    }
 }
 @media (min-width:576px) and (max-width:992px){
     #service .service_content .service_card .service_icon img {
@@ -233,6 +255,18 @@
         margin: auto;
         padding: 0;
     }
+    #portfolio .portfolio_img {
+        height: 300px;
+        width: 230px;
+        margin-bottom: 25px;
+    }
+    #portfolio .portfolio_img img {
+        width: 230px;
+    }
+    #portfolio .portfolio_img .portfolio_info h4 {
+        padding-bottom: 5px;
+        margin-top: 110px;
+    }
 }
 @media (min-width:778px) and (max-width:992px){
     #about .about_content {
@@ -240,8 +274,27 @@
         margin: auto;
         padding: 0;
     }
+    #portfolio .portfolio_img {
+        height: 330px;
+        width: 270px;
+        margin-bottom: 50px;
+    }
+    #portfolio .portfolio_img img {
+        width: 270px;
+    }
+    #portfolio .portfolio_img .portfolio_info h4 {
+        padding-bottom: 6px;
+        margin-top: 125px;
+    }
 }
-
+@media (min-width:1200px) and (max-width:1399px){
+    #portfolio .portfolio_img,
+    #portfolio .portfolio_img img
+     {
+        width: 260px;
+    }
+    
+}
 /* Header Ends here */
 
 /* nav starts here */
