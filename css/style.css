@@ -840,6 +840,7 @@ nav #myCusNav ul li:hover a::before{
     transition: ease-in-out all 0.5s;
     padding: 58px 20px 20px 20px;
     text-align: center;
+    visibility: hidden;
 }
 #blog .blog_content p{
     font-size: 13px;
@@ -909,6 +910,7 @@ nav #myCusNav ul li:hover a::before{
 #blog .blogSliderContent.slick-center .blog_content {
     transform: translateY(-25px);
     border: 1px solid var(--footer_text);
+    visibility: visible;
 }
 #blog{
     position: relative;
