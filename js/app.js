@@ -62,6 +62,7 @@ $(function(){
     centerPadding: "0px",
     autoplay: true,
     autoplaySpeed: 3000,
+    speed: 1000,
     centerMode: true,
     responsive: [
         {
