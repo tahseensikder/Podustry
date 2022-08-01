@@ -316,7 +316,7 @@
         margin-bottom: 20px;
     }
 }
-@media (min-width:576px) and (max-width:778px){
+@media (min-width:576px) and (max-width:768px){
     #about .about_content{
         width: 540px;
         margin: auto;
@@ -344,7 +344,7 @@
         padding: 60px 60px;
     }
 }
-@media (min-width:778px) and (max-width:992px){
+@media (min-width:768px) and (max-width:992px){
     #about .about_content {
         width: 720px;
         margin: auto;
