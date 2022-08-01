@@ -274,6 +274,9 @@
     #counter_up .count h3 {
         font-size: 10px;
     }
+    .count.col-3 {
+        padding: 0;
+    }
     #blog .blog_content p {
         font-size: 10px;
     }
