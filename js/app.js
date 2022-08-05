@@ -60,7 +60,7 @@ $(function(){
     prevArrow:'.blogLeft',
     nextArrow:'.blogRight',
     centerPadding: "0px",
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     speed: 1000,
     centerMode: true,
@@ -104,4 +104,19 @@ $(function(){
   $('#num3').countMe(10,8);
   $('#num4').countMe(11,9);
 
+// testimonial 
+  $(".testimonial_content").slick({
+    slidesToShow: 1,
+    fade:true,
+    prevArrow:'.testi_left',
+    nextArrow:'.testi_right',
+    asNavFor:".testimonial_images",
+  })
+  $('.testimonial_images').slick({
+    slidesToShow:3,
+    centerMode:true,
+    arrows:false,
+    centerPadding: "0px",
+    asNavFor:".testimonial_content",
+  })
 })

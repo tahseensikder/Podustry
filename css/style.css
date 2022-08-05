@@ -44,6 +44,7 @@ ul,ol{
     --heading_text: #353535;
     --footer_text: #dddddd;
     --white_text: #ffffff;
+    --overlay_light: rgba(0, 0, 0,0.2);
     --overlay: rgba(0, 0, 0,0.7);
     --overlay_secondary: rgba(255, 204, 51, 0.8);
 }
@@ -723,16 +724,12 @@ nav #myCusNav ul li:hover a::before{
 #portfolio .portfolio_img::after{
     position: absolute;
     content: '';
-    height: 0%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--overlay);
+    background-color: var(--overlay_light);
     z-index: 1;
-    clip-path: polygon(0 0, 100% 0, 100% 52%, 0 76%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all ease-in-out 0.5s;
 }
 #portfolio .portfolio_img .portfolio_info{
     position: absolute;
@@ -741,7 +738,7 @@ nav #myCusNav ul li:hover a::before{
     height: 0%;
     width: 100%;
     background-color: var(--overlay_secondary);
-    z-index: 1;
+    z-index: 2;
     clip-path: polygon(0 60%, 100% 20%, 100% 100%, 0 100%);
     opacity: 0;
     visibility: hidden;
@@ -754,8 +751,7 @@ nav #myCusNav ul li:hover a::before{
     padding-bottom: 10px;
     margin-top: 140px;
 }
-#portfolio .portfolio_img:hover .portfolio_info,
-#portfolio .portfolio_img:hover::after{
+#portfolio .portfolio_img:hover .portfolio_info{
     visibility: visible;
     opacity: 1;
 }
@@ -862,6 +858,10 @@ nav #myCusNav ul li:hover a::before{
     height: 45px;
     width: 120px;
     background-color: var(--primary_color);
+    transition: all linear 0.5s;
+}
+#blog .blog_content a:hover{
+    color: var(--white_text);
 }
 #blog .blog_content .social_icon{
     padding: 0;
@@ -1054,7 +1054,241 @@ nav #myCusNav ul li:hover a::before{
 }
 /* Blog ends here */
 
+/* Testimonial starts here */
+#testimonial{
+    margin: 50px 0;
+}
+#testimonial h3{
+    text-align: center;
+    font-weight: 300;
+    color: var(--heading_text);
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+#testimonial p{
+    font-size: 16px;
+    color: var(--secondary_color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+#testimonial .testi_detail{
+    background-image: url(../image/testi_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 394px;
+    z-index: 1;
+    padding: 50px 0;
+}
+#testimonial .testi_detail::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay);
+    z-index: -1;
 
+}
+#testimonial .testi_detail .testimonial_content .testi_text{
+    color: var(--footer_text);
+}
+#testimonial .testi_detail .testimonial_content .testi_text p{
+    color: var(--footer_text);
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#testimonial .testimonial_images{
+    padding: 30px 0;
+    display: block;
+}
+#testimonial .testimonial_images .testi_img span{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+#testimonial .testimonial_images .testi_img span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--primary_color);
+    top: 0;
+    left: 0;
+    transform: scale(1.35);
+    display: none;
+}
+#testimonial .testimonial_images .testi_img span::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(243, 249, 250, 0.7);
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}
+#testimonial .testimonial_images .testi_img img{
+    width: 100%;
+}
+#testimonial .testimonial_images .testi_img.slick-center img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#testimonial .testimonial_images .testi_img.slick-center span::after{
+    display: block;
+}
+#testimonial .testimonial_images .slick-track {
+    padding: 20px 0;
+}
+
+/* #testimonial .testi_detail{
+    position: relative;
+} */
+#testimonial .testi_detail .testi_left{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    left: 30px;
+    font-size: 40px;
+    color: var(--white_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left span{
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_right{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    right: 30px;
+    font-size: 40px;
+    color: var(--white_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_right::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_right::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_right span{
+    height: 50px;
+    width: 50px;
+}
+#testimonial .testi_detail .testi_right span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_right span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#testimonial .testi_detail .testi_left:hover,
+#testimonial .testi_detail .testi_right:hover{
+    color: var(--primary_color);
+}
+#testimonial .testi_detail .testi_left:hover::before,
+#testimonial .testi_detail .testi_left:hover::after,
+#testimonial .testi_detail .testi_right:hover::before,
+#testimonial .testi_detail .testi_right:hover::after,
+#testimonial .testi_detail .testi_right:hover span::before,
+#testimonial .testi_detail .testi_right:hover span::after,
+#testimonial .testi_detail .testi_left:hover span::before,
+#testimonial .testi_detail .testi_left:hover span::after{
+    background-color: var(--primary_color);
+}
+/* Testimonial ends here */
 
 /* clip-path: polygon(0 69%, 100% 41%, 100% 100%, 0 100%);  BOTTOM */
 /* clip-path: polygon(0 0, 100% 0, 100% 41%, 0 69%); TOP */
