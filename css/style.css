@@ -9,15 +9,16 @@ Table Of Content
 ==============================
 1. Common Css 
 2. Homepage
-    i.    header section
-    ii.   navbar
-    iii.  banner
-    iv.   service
-    v.    about section
-    vi.   portfolio
-    vii.  counter
-    viii. blog 
-    ix.   Testimonial
+      i.    header section
+      ii.   navbar
+      iii.  banner
+      iv.   service
+      v.    about section
+      vi.   portfolio
+      vii.  counter
+      viii. blog 
+      ix.   Testimonial
+      x.    Footer
 */
 
 /* Common Css starts here */
@@ -1454,8 +1455,126 @@ nav #myCusNav ul li:hover a::before{
 }
 /* web_icon ends here */
 
+/*Footer starts here */
+footer .footer_top{
+    padding: 55px 0;
+    background-color: var(--heading_text);
+}
+footer h3{
+    padding-bottom: 45px;
+    font-size: 18px;
+    color: var(--white_text);
+}
+footer .footer_text a{
+    padding-bottom: 20px;
+    display: block;
+}
+footer .footer_text p{
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: var(--footer_text);
+}
+footer .footer_text ul{
+    text-align: left;
+}
+footer .footer_text ul li{
+    display: inline-block;
+    padding-right: 15px;
 
+}
+footer .footer_text ul li a {
+    display: block;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--white_text);
+    font-size: 20px;
+    color: var(--heading_text);
+    transition: all linear 0.5s;
+}
+footer .footer_text ul li:hover a{
+    background-color: var(--primary_color);
+}
+footer .footer_contact .contact_item{
+    padding-bottom: 28px;
+}
+footer .footer_contact .contact_item p{
+    font-size: 14px;
+    color: var(--footer_text);
+}
+footer .footer_contact .contact_item span{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary_color);
+}
+footer .footer_contact .contact_item .contact-item-info a{
+    display: block;
+    color: var(--footer_text);
+    font-size: 14px;
+}
+footer .footer_links ul li{
+    padding-bottom: 6px;
+}
+footer .footer_links ul li a{
+    font-size: 14px;
+    color: var(--footer_text);
+    transition: all ease-in-out 0.5s;
+}
+footer .footer_links ul li:hover a{
+    color: var(--primary_color);
+}
+footer .footer_news .news_item{
+    padding-bottom: 30px;
+}
+footer .footer_news .news_item .news_img span{
+    display: block;
+    height: 85px;
+    width: 85px;
+}
+footer .footer_news .news_item .news_img span img{
+    width: 100%;
+}
+footer .footer_news .news_item .news_content h5{
+    color: var(--white_text);
+    padding-top: 8px;
+    font-size: 14px;
+}
+footer .footer_news .news_item .news_content a{
+    color: var(--footer_text);
+    font-size: 14px;
+}
+footer .footer_news .news_item .news_content{
+    padding-left: 0;
+    padding-right: 0;
+}
+footer .footer_news .news_item .news_content .news_icon a{
+    display: block;
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--footer_text);
+    transition: all ease-in-out 0.5s;
+}
+footer .footer_news .news_item .news_content .news_icon a:hover{
+    text-decoration:2px underline var(--primary_color);
+}
+footer .footer_bottom{
+    padding: 20px 0;
+    background-color: var(--secondary_color);
+}
+footer .footer_bottom p{
+    font-size: 14px;
+    color: var(--footer_text);
+}
+footer .footer_bottom p span a{
+    color: var(--primary_color);
+}
+/*Footer ends here */
 
-/* clip-path: polygon(0 69%, 100% 41%, 100% 100%, 0 100%);  BOTTOM */
-/* clip-path: polygon(0 0, 100% 0, 100% 41%, 0 69%); TOP */
 /* ~~~~Homepage ends here ~~~~*/
