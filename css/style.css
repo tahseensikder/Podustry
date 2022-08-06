@@ -16,7 +16,8 @@ Table Of Content
     v.    about section
     vi.   portfolio
     vii.  counter
-    viii. blog
+    viii. blog 
+    ix.   Testimonial
 */
 
 /* Common Css starts here */
@@ -1291,6 +1292,169 @@ nav #myCusNav ul li:hover a::before{
     background-color: var(--primary_color);
 }
 /* Testimonial ends here */
+
+/* web_icon starts here */
+#web_icon{
+    padding: 20px 0;
+    position: relative;
+}
+#web_icon .web_icon_slider .web_item{
+    padding: 40px 0;
+}
+#web_icon .web_icon_slider .web_item a{
+    display: block;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+}
+#web_icon .web_icon_slider .web_item img{
+    width: 100%;
+}
+#web_icon .web_icon_slider .web_item.slick-center img{
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.54);
+    transform: scale(1.1);
+    
+}
+#web_icon .web_left{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    left: 30px;
+    font-size: 40px;
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#web_icon .web_left::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_left::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_left span{
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.5s;
+}
+#web_icon .web_left span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_left span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_right{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    right: 30px;
+    font-size: 40px;
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+}
+#web_icon .web_right::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_right::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_right span{
+    height: 50px;
+    width: 50px;
+}
+#web_icon .web_right span::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_right span::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--heading_text);
+    transform: scale(1.4);
+    transition: all linear 0.5s;
+}
+#web_icon .web_left:hover,
+#web_icon .web_right:hover{
+    color: var(--primary_color);
+}
+#web_icon .web_left:hover::before,
+#web_icon .web_left:hover::after,
+#web_icon .web_right:hover::before,
+#web_icon .web_right:hover::after,
+#web_icon .web_right:hover span::before,
+#web_icon .web_right:hover span::after,
+#web_icon .web_left:hover span::before,
+#web_icon .web_left:hover span::after{
+    background-color: var(--primary_color);
+}
+/* web_icon ends here */
+
+
 
 /* clip-path: polygon(0 69%, 100% 41%, 100% 100%, 0 100%);  BOTTOM */
 /* clip-path: polygon(0 0, 100% 0, 100% 41%, 0 69%); TOP */
