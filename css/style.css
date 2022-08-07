@@ -1529,6 +1529,7 @@ footer .footer_links ul li a{
 }
 footer .footer_links ul li:hover a{
     color: var(--primary_color);
+    padding-left: 6px;
 }
 footer .footer_news .news_item{
     padding-bottom: 30px;
@@ -1550,19 +1551,19 @@ footer .footer_news .news_item .news_content a{
     color: var(--footer_text);
     font-size: 14px;
 }
-footer .footer_news .news_item .news_content{
-    padding-left: 0;
-    padding-right: 0;
+footer .footer_news .news_item .news_content ul{
+    margin-top: 10px;
 }
-footer .footer_news .news_item .news_content .news_icon a{
-    display: block;
-    padding-top: 20px;
-    font-size: 12px;
-    color: var(--footer_text);
-    transition: all ease-in-out 0.5s;
+footer .footer_news .news_item .news_content ul li{
+    display: inline-block;
+    padding-right: 6px;
 }
-footer .footer_news .news_item .news_content .news_icon a:hover{
-    text-decoration:2px underline var(--primary_color);
+footer .footer_news .news_item .news_content ul li a{
+    font-size: 13px;
+}
+footer .footer_news .news_item .news_content ul li:hover a span{
+    color: var(--primary_color);
+    transition: all linear 0.5s;
 }
 footer .footer_bottom{
     padding: 20px 0;
