@@ -717,23 +717,35 @@ nav #myCusNav ul li:hover a::before{
     text-align: center;
     margin-bottom: 40px;
 }
-#portfolio .portfolio_img{
-    height: 360px;
-    position: relative;
-    width: 280px;
-    padding: 0;
+#portfolio .port_slider {
+    text-align: -webkit-center;
 }
-#portfolio .portfolio_img::after{
-    position: absolute;
-    content: '';
+#portfolio .portfolio_img{
+    position: relative;
+    padding: 0 15px;
+    
+}
+#portfolio .portfolio_img span{
+    position: relative;
+    display: block;
     height: 100%;
     width: 100%;
-    top: 0;
+}
+#portfolio .portfolio_img span img{
+    height: 100%;
+    width: 100%;
+}
+#portfolio .portfolio_img span::after{
+    position: absolute;
+    content: '';
     left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background-color: var(--overlay_light);
     z-index: 1;
 }
-#portfolio .portfolio_img .portfolio_info{
+#portfolio .portfolio_img span .portfolio_info{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -746,31 +758,20 @@ nav #myCusNav ul li:hover a::before{
     visibility: hidden;
     transition: all ease-in-out 0.5s;
 }
+#portfolio .portfolio_img span:hover .portfolio_info{
+    opacity: 1;
+    visibility: visible;
+    height: 65%;
+}
 #portfolio .portfolio_img .portfolio_info h4{
     text-align: center;
     font-size: 18px;
     color: var(--heading_text);
-    padding-bottom: 10px;
-    margin-top: 140px;
+    padding-bottom: 6px;
+    margin-top: 150px;
 }
-#portfolio .portfolio_img:hover .portfolio_info{
-    visibility: visible;
-    opacity: 1;
-}
-#portfolio .portfolio_img:hover::after{
-    height: 100%;
-}
-#portfolio .portfolio_img:hover .portfolio_info{
-    height: 60%;
-}
-#portfolio .portfolio_info p{
-    font-size: 14px;
-}
-#portfolio .portfolio_img img{
-    height: 100%;
-    width: 280px;
-}
-/* Portfolio ends here */
+
+/* Portfolio ends here
 
 /* Counter section starts here */
 #counter_up{
