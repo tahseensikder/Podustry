@@ -650,6 +650,16 @@
     }
 }
 @media (min-width:1200px) and (max-width:1399px){
+    #about .about_content {
+        padding-left: 65px;
+        padding-right: 130px;
+    }
+    #about #aboutTabContent a {
+        margin-top: 10px;
+    }
+    #about .about_content #aboutTab li button.active::after, #about .about_content #aboutTab li button:hover::after {
+        width: 100px;
+    }
     #portfolio .portfolio_img .portfolio_info h4 {
         padding-bottom: 4px;
         margin-top: 116px;
