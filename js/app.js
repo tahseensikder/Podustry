@@ -209,4 +209,31 @@ $(function(){
          // instead of a settings object
     ]
   })
+  //preloader
+  $(window).on('load',function(){
+   $('.preloader').fadeOut(3500)
+  })
+  // BackToTop button
+  $(window).on('scroll',function(){
+    if ($(window).scrollTop() > 300){
+      $('.backToTop').fadeIn()
+    }
+    else{
+      $('.backToTop').fadeOut()
+    }
+  })
+  $('.backToTop').on('click',function(){
+    $('html,body').animate({
+        scrollTop:0,
+    },1000)
+  })
+  // Fixed Navbar
+  $(window).on('scroll',function(){
+    if ($(window).scrollTop()>$('nav').height()){
+        $('nav').addClass('menu_animate')
+    }
+    else {
+        $('nav').removeClass('menu_animate')
+    }
+   })
 })
