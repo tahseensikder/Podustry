@@ -1,3 +1,4 @@
+// Homepage Starts
 $(function(){
    $(".btn_toggler").click(function(){
     let logo = $("nav .navLogo");
@@ -237,3 +238,17 @@ $(function(){
     }
    })
 })
+// Homepage ends
+
+// About Us Page starts
+$(function(){
+  $('.team_slider').slick({
+    slidesToShow:3,
+    slidesToScroll:1,
+    centerMode:true,
+    centerPadding:'0px',
+    arrows:false,
+    autoplay:true,
+  })
+})
+// About Us Page ends

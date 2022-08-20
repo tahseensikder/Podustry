@@ -55,9 +55,75 @@ ul, ol {
   --overlay_secondary: rgba(255, 204, 51, 0.8);
 }
 
+.arrow_common {
+  position: absolute;
+  top: calc(50% - 25px);
+  z-index: 9;
+  font-size: 40px;
+  color: var(--heading_text);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: all linear 0.5s;
+}
+.arrow_common::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 0;
+  background-color: var(--heading_text);
+  transform: scale(1.4);
+  transition: all linear 0.5s;
+}
+
+.pos_relative {
+  position: relative;
+}
+
 /* Common Css ends here */
+#about_banner {
+  background-image: url(../image/02_About_Us.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 301px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+#about_banner::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay);
+  z-index: -1;
+}
+#about_banner .container {
+  height: 100%;
+}
+#about_banner .container .row {
+  height: 100%;
+}
+#about_banner .container .row .banner_content h2 {
+  font-size: 35px;
+  color: var(--white_text);
+  padding-bottom: 20px;
+}
+#about_banner .container .row .banner_content h6 {
+  font-size: 18px;
+  color: var(--white_text);
+}
+#about_banner .container .row .banner_content h6 span {
+  color: var(--primary_color);
+}
+
 #about_produstry {
-  margin: 40px 0;
+  margin: 120px 0;
 }
 #about_produstry .about_produstry_img {
   position: relative;
@@ -101,14 +167,14 @@ ul, ol {
   padding-left: 50px;
 }
 .about_mission .about_produstry_content h3 {
-  padding-bottom: 30px;
+  padding-bottom: 25px !important;
 }
 .about_mission .about_produstry_content ul {
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .about_mission .about_produstry_content ul li {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .about_mission .about_produstry_content ul li i {
   color: var(--primary_color);
@@ -124,4 +190,103 @@ ul, ol {
 .about_mission .about_produstry_img img {
   left: -120px !important;
   right: 0 !important;
+}
+
+#our_team {
+  margin: 50px 0;
+}
+#our_team .team_heading h2 {
+  text-align: center;
+  font-weight: 300;
+  color: var(--heading_text);
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+#our_team .team_heading p {
+  font-size: 16px;
+  color: var(--secondary_color);
+  margin-bottom: 40px;
+}
+#our_team .team_slider .team_slider_item {
+  margin: 0 20px;
+  padding: 30px 0;
+  height: 570px;
+}
+#our_team .team_slider .team_slider_item .team_image {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 89%);
+          clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 89%);
+  position: relative;
+}
+#our_team .team_slider .team_slider_item .team_image img {
+  height: 440px;
+}
+#our_team .team_slider .team_slider_item .team_content {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--heading_text);
+  -webkit-clip-path: polygon(0 28%, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(0 28%, 100% 0%, 100% 100%, 0 100%);
+  margin-top: -70px;
+  transition: all ease-in-out 0.3s;
+}
+#our_team .team_slider .team_slider_item .team_content h3 {
+  font-size: 18px;
+  color: var(--white_text);
+}
+#our_team .team_slider .team_slider_item .team_content h6 {
+  color: var(--footer_text);
+  font-size: 14px;
+}
+#our_team .team_slider .team_slider_item .team_content ul {
+  display: none;
+}
+#our_team .team_slider .team_slider_item .team_content ul li {
+  display: inline-block;
+  padding: 4px;
+  margin-top: 10px;
+}
+#our_team .team_slider .team_slider_item .team_content ul li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--heading_text);
+  border-radius: 50%;
+  color: var(--white_text);
+  transition: all ease-in-out 0.3s;
+}
+#our_team .team_slider .team_slider_item .team_content ul li a:hover {
+  outline: 1px solid var(--heading_text);
+  border-radius: 50%;
+  color: var(--heading_text);
+  background: transparent;
+}
+
+#our_team .team_slider_item.slick-center .team_content {
+  -webkit-clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0 100%);
+  background-color: var(--primary_color);
+  transition: all ease-in-out 0.3s;
+  height: 200px;
+  margin-top: -120px;
+}
+#our_team .team_slider_item.slick-center .team_content h3 {
+  margin-top: 20px;
+}
+#our_team .team_slider_item.slick-center .team_content ul {
+  margin-top: 10px;
+  display: block !important;
+}
+#our_team .team_slider_item.slick-center .team_image {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 80%);
+          clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 80%);
+  transition: all ease-in-out 0.3s;
 }/*# sourceMappingURL=style.css.map */

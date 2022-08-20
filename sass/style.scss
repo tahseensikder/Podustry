@@ -50,11 +50,79 @@ ul,ol{
     --overlay: rgba(0, 0, 0,0.7);
     --overlay_secondary: rgba(255, 204, 51, 0.8);
 }
+.arrow_common{
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 9;
+    font-size: 40px;
+    color: var(--heading_text);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.5s;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        top: 0;
+        left: 0;
+        background-color: var(--heading_text);
+        transform: scale(1.4);
+        transition: all linear 0.5s;
+    }
+}
+.pos_relative{
+    position: relative;
+}
 /* Common Css ends here */
+
+// About banner starts here
+#about_banner{
+    background-image: url(../image/02_About_Us.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 301px;
+    position: relative;
+    z-index: 1;
+    margin-bottom:80px;
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--overlay);
+        z-index: -1;
+    }
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+            .banner_content{
+                h2{
+                    font-size: 35px;
+                    color: var(--white_text);
+                    padding-bottom: 20px;
+                }
+                h6{
+                    font-size: 18px;
+                    color: var(--white_text);
+                    span{
+                        color: var(--primary_color);
+                    }
+                }
+            }
+        }
+    }
+}
+// About banner starts here
 
 //About_Produstry starts here
 #about_produstry{
-    margin: 40px 0;
+    margin: 120px 0;
     .about_produstry_img{
         position: relative;
         background-image: url(../image/About_produstry_bg.png);
@@ -98,13 +166,13 @@ ul,ol{
         padding-right: 0px!important;
         padding-left: 50px;
         h3{
-            padding-bottom: 30px;
+            padding-bottom: 25px!important;
         }
         ul{
             margin-left: 30px;
-            margin-top: 20px;
+            margin-top: 10px;
             li{
-                margin: 10px 0;
+                margin: 5px 0;
                 i{
                     color: var(--primary_color);
                 }
@@ -125,3 +193,108 @@ ul,ol{
     }
 }
 // About_Produstry ends here
+
+// Our Team starts here
+#our_team{
+    margin: 50px 0;
+    .team_heading{
+        h2{
+            text-align: center;
+            font-weight: 300;
+            color: var(--heading_text);
+            font-size: 35px;
+            padding-bottom: 25px;
+        }
+        p{
+            font-size: 16px;
+            color: var(--secondary_color);
+            margin-bottom: 40px;
+        }
+    }
+    .team_slider{
+        .team_slider_item{
+            margin: 0 20px;
+            padding: 30px 0;
+            height: 570px;
+            .team_image{
+                display: flex;
+                justify-content: center;
+                background-color: #f1f1f1;
+                clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 89%);
+                position: relative;
+                img{
+                    height: 440px;
+                }
+            }
+            .team_content{
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background-color: var(--heading_text);
+                clip-path: polygon(0 28%, 100% 0%, 100% 100%, 0 100%);
+                margin-top: -70px;
+                transition: all ease-in-out 0.3s;
+                h3{
+                    font-size: 18px;
+                    color: var(--white_text);
+                }
+                h6{
+                    color: var(--footer_text);
+                    font-size: 14px;
+                }
+                ul{
+                    
+                    display: none;
+                    li{
+                        display: inline-block;
+                        padding: 4px;
+                        margin-top: 10px;
+                        a{
+                            display: block;
+                            height: 40px;
+                            width: 40px;
+                            font-size: 16px;
+                            line-height: 40px;
+                            text-align: center;
+                            background-color: var(--heading_text);
+                            border-radius: 50%;
+                            color: var(--white_text);
+                            transition: all ease-in-out 0.3s;
+                            &:hover{
+                                outline: 1px solid var(--heading_text);
+                                border-radius: 50%;
+                                color: var(--heading_text);
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#our_team .team_slider_item.slick-center{
+    .team_content{
+        clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0 100%);
+        background-color: var(--primary_color);
+        transition: all ease-in-out 0.3s;
+        height: 200px;
+        margin-top: -120px;
+        h3{
+            margin-top: 20px;
+        }
+        ul{
+            margin-top: 10px;
+            display: block!important;
+        }
+
+    }
+    .team_image{
+        clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 80%);
+        transition: all ease-in-out 0.3s;
+    }
+}
+ 
+// Our Team ends here
