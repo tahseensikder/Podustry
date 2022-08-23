@@ -127,7 +127,7 @@ ul, ol {
 }
 
 /* Common Css ends here */
-#about_banner {
+.page_banner {
   background-image: url(../image/02_About_Us.jpg);
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@ ul, ol {
   z-index: 1;
   margin-bottom: 80px;
 }
-#about_banner::after {
+.page_banner::after {
   position: absolute;
   content: "";
   top: 0;
@@ -146,22 +146,22 @@ ul, ol {
   background-color: var(--overlay);
   z-index: -1;
 }
-#about_banner .container {
+.page_banner .container {
   height: 100%;
 }
-#about_banner .container .row {
+.page_banner .container .row {
   height: 100%;
 }
-#about_banner .container .row .banner_content h2 {
+.page_banner .container .row .banner_content h2 {
   font-size: 35px;
   color: var(--white_text);
   padding-bottom: 20px;
 }
-#about_banner .container .row .banner_content h6 {
+.page_banner .container .row .banner_content h6 {
   font-size: 18px;
   color: var(--white_text);
 }
-#about_banner .container .row .banner_content h6 span {
+.page_banner .container .row .banner_content h6 span {
   color: var(--primary_color);
 }
 
@@ -343,4 +343,43 @@ ul, ol {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 80%);
           clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 80%);
   transition: all ease-in-out 0.3s;
+}
+
+#portfolio .container .row .portfolio_img {
+  padding: 15px;
+}
+#portfolio .container .load_btn {
+  margin-top: 20px;
+}
+#portfolio .container .load_btn a {
+  padding: 15px 20px;
+  display: inline-block;
+  background-color: var(--primary_color);
+  color: var(--heading_text);
+  font-size: 16px;
+  font-weight: 400;
+  transition: all linear 0.3s;
+}
+#portfolio .container .load_btn a:hover {
+  background-color: var(--white_text);
+}
+#portfolio .container .load_btn a span i {
+  -webkit-animation: btn-rotate 1s infinite linear;
+          animation: btn-rotate 1s infinite linear;
+}
+@-webkit-keyframes btn-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes btn-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */

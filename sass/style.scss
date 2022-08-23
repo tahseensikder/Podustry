@@ -124,8 +124,10 @@ ul,ol{
 }
 /* Common Css ends here */
 
+// *** ABOUT PAGE HERE ***
+
 // About banner starts here
-#about_banner{
+.page_banner{
     background-image: url(../image/02_About_Us.jpg);
     background-position: center;
     background-size: cover;
@@ -357,3 +359,43 @@ ul,ol{
 }
  
 // Our Team ends here
+// *** ABOUT PAGE HERE ***
+
+// *** PORTFOLIO PAGE HERE ***
+#portfolio{
+    .container{
+        .row{
+            .portfolio_img{
+                padding: 15px;
+            }
+        }
+        .load_btn{
+            margin-top: 20px;
+            a{
+                padding: 15px 20px;
+                display: inline-block;
+                background-color: var(--primary_color);
+                color: var(--heading_text);
+                font-size: 16px;
+                font-weight: 400;
+                transition: all linear 0.3s;
+                &:hover{
+                    background-color: var(--white_text);
+                }
+                span i{
+                    animation: btn-rotate 1s infinite linear;
+                }
+                @keyframes btn-rotate {
+                    0%{
+                        transform: rotate(180deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+// *** PORTFOLIO PAGE HERE ***
