@@ -72,9 +72,55 @@ ul,ol{
         transform: scale(1.4);
         transition: all linear 0.5s;
     }
-}
-.pos_relative{
-    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        top: 0;
+        right: 0;
+        background-color: var(--heading_text);
+        transform: scale(1.4);
+        transition: all linear 0.5s;
+    }
+    &:hover{
+        color: var(--primary_color);
+        &::after,&::before{
+            background-color: var(--primary_color);
+        }
+        span{
+            &::after,&::before{
+                background-color: var(--primary_color);
+            }
+        }
+    }
+    span{
+        height: 50px;
+        width: 50px;
+        transition: all linear 0.5s;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            background-color: var(--heading_text);
+            transform: scale(1.4);
+            transition: all linear 0.5s;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--heading_text);
+            transform: scale(1.4);
+            transition: all linear 0.5s;
+        }
+    }
 }
 /* Common Css ends here */
 
@@ -196,6 +242,19 @@ ul,ol{
 
 // Our Team starts here
 #our_team{
+    .team_arrow{
+        .team_left{
+            position: absolute;
+            left: 30px;
+        }
+        .team_right{
+            position: absolute;
+            right: 30px;
+        }
+        .arrow_common{
+            top: calc(50% + 25px);
+        }
+    }
     margin: 50px 0;
     .team_heading{
         h2{
