@@ -122,11 +122,6 @@ ul,ol{
         }
     }
 }
-/* Common Css ends here */
-
-// *** ABOUT PAGE HERE ***
-
-// About banner starts here
 .page_banner{
     background-image: url(../image/02_About_Us.jpg);
     background-position: center;
@@ -166,7 +161,22 @@ ul,ol{
         }
     }
 }
-// About banner starts here
+.section_heading{
+    text-align: center;
+    h3{
+        font-size: 35px;
+        color: var(--heading_text);
+        font-weight: 300;
+    }
+    p{
+        padding: 20px 0;
+        font-size: 16px;
+        color: var(--secondary_color);
+    }
+}
+/* Common Css ends here */
+
+// *** ABOUT PAGE HERE ***
 
 //About_Produstry starts here
 #about_produstry{
@@ -399,3 +409,149 @@ ul,ol{
     }
 }
 // *** PORTFOLIO PAGE HERE ***
+
+// *** CONTACT PAGE HERE ***
+#contact_info{
+    margin: 30PX 0;
+    .row{
+        .contact_info_item{
+            text-align: center;
+            span{
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 26px;
+                background-color: var(--primary_color);
+                display: inline-block;
+                border-radius: 50%;
+                color: var(--heading_text);
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                color: var(--heading_text);
+                padding: 20px 0;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: -12px;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #c4c4c4;
+                }
+                a{
+                    color: var(--heading_text);
+                    transition: all 0.5s linear;
+                    &:hover{
+                        color: var(--primary_color);
+                    }
+                }
+            }
+        }
+        .last_item{
+            p{
+               &::before{
+                background-color: transparent;
+               }
+            }
+        }
+    }
+}
+
+#map{
+    margin: 50px 0;
+    .overlay{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        span{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 300px;
+            color: var(--primary_color);
+            font-size: 40px;
+            z-index: -1;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: var(--overlay);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+    
+}
+#newsletter{
+    margin: 50px 0;
+    .section_heading{
+        margin-bottom: 30px;
+    }
+    .container{
+        background-image: url(../image/contact_newsletter_bg.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        .form_sec{
+            position: absolute;
+            top: 40px;
+            right: 100px;
+            background-color: var(--white_text);
+            height: 420px;
+            box-shadow: 0px 1px 8px 4px #999;
+            form{
+                height: 100%;
+                margin: 40px 60px;
+                input{
+                    display: block;
+                    height: 35px;
+                    width: 100%;
+                    padding: 0 20px;
+                    margin: 30px 0;
+                    border: 1px solid var(--footer_text);
+                    outline: none;
+                    transition: all linear 0.3s;
+                    font-size: 13px;
+                    color: #777777;
+                    &:focus{
+                        box-shadow: 0px 0px 6px 0px rgba(86,216,252,0.78);
+                    }
+                    
+                }
+                #message{
+                    height: 120px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: 1px solid var(--footer_text);
+                    outline: none;
+                    resize: none;
+                    font-size: 13px;
+                    color: #777777;
+                }
+                #submit{
+                    background-color: var(--primary_color);
+                    color: var(--heading_text);
+                    font-weight: 500;
+                    font-size: 16px;
+                    &:hover{
+                        background-color: var(--footer_text);
+                    }
+                }
+            }
+        }
+    }
+}
+// *** CONTACT PAGE HERE ***
