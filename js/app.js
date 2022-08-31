@@ -230,11 +230,11 @@ $(function(){
   })
   // Fixed Navbar
   $(window).on('scroll',function(){
-    if ($(window).scrollTop()>$('nav').height()){
-        $('nav').addClass('menu_animate')
+    if ($(window).scrollTop()>$('#MyNav').height()){
+        $('#MyNav').addClass('menu_animate')
     }
     else {
-        $('nav').removeClass('menu_animate')
+        $('#MyNav').removeClass('menu_animate')
     }
    })
 })
@@ -293,3 +293,9 @@ $(function(){
   })
 })
 // About Us Page ends
+
+// Blog List Page
+$(function(){
+  var mixer = mixitup('.filteritems');
+})
+// Blog List Page

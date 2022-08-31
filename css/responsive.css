@@ -283,7 +283,7 @@
     nav #myCusNav .btn_toggler:hover{
         color: var(--primary_color);
     }
-    nav{
+    #MyNav{
         min-height: 100px;
     }
     nav .container{
