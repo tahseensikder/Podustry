@@ -730,13 +730,14 @@ nav #myCusNav ul li:hover a::before{
     height: 50px;
     width: 125px;
     color: var(--heading_text);
+    border:1px solid var(--white_text);
     background-color: var(--primary_color);
     transition: all linear 0.5s;
 }
 #about #aboutTabContent a:hover{
     color: var(--primary_color);
-    background-color: var(--heading_text);
-    border-radius: 5px;
+    background-color: var(--white_text);
+    border-color: var(--primary_color);
 }
 /* about section ends here */
 
@@ -900,11 +901,14 @@ nav #myCusNav ul li:hover a::before{
     line-height: 45px;
     height: 45px;
     width: 120px;
+    border: 1px solid var(--white_text);
     background-color: var(--primary_color);
     transition: all linear 0.5s;
 }
 #blog .blog_content a:hover{
-    color: var(--white_text);
+    color: var(--primary_color);
+    border-color: var(--primary_color);
+    background-color: #f7f7f7;
 }
 #blog .blog_content .social_icon{
     padding: 0;
@@ -931,10 +935,6 @@ nav #myCusNav ul li:hover a::before{
     visibility: hidden;
     transition: ease-in-out all 0.5s;
 }
-#blog .blog_img:hover .blog_img_overlay{
-    opacity: 1;
-    visibility: visible;
-}
 #blog .blog_img .blog_img_overlay span {
     color: var(--heading_text);
     height: 40px;
@@ -942,6 +942,13 @@ nav #myCusNav ul li:hover a::before{
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.5s;
+}
+#blog .blog_img .blog_img_overlay span:hover{
+    border-color: var(--primary_color);
+    color: var(--primary_color);
+    background-color: transparent;
 }
 #blog .blogSliderContent{
     padding: 60px 30px;
@@ -949,6 +956,10 @@ nav #myCusNav ul li:hover a::before{
 #blog .blogSliderContent.slick-center .blog_img {
     transform: translateY(12px);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
+#blog .blogSliderContent.slick-center .blog_img .blog_img_overlay{
+    opacity: 1;
+    visibility: visible;
 }
 #blog .blogSliderContent.slick-center .blog_content {
     transform: translateY(-25px);
@@ -1559,6 +1570,10 @@ footer .footer_contact .contact_item .contact-item-info a{
     display: block;
     color: var(--footer_text);
     font-size: 14px;
+    transition: all linear 0.3s;
+}
+footer .footer_contact .contact_item .contact-item-info a:hover{
+    color: var(--primary_color);
 }
 footer .footer_links ul li{
     padding-bottom: 6px;
@@ -1570,7 +1585,7 @@ footer .footer_links ul li a{
 }
 footer .footer_links ul li:hover a{
     color: var(--primary_color);
-    padding-left: 6px;
+    padding-left: 10px;
 }
 footer .footer_news .news_item{
     padding-bottom: 30px;
