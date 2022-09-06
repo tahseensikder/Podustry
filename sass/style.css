@@ -578,9 +578,6 @@ ul, ol {
 #blog_menu .row .view_select select option {
   text-align: center;
 }
-#blog_menu .row .my_pagination {
-  justify-content: end;
-}
 #blog_menu .row .my_pagination p {
   margin-right: 30px;
   font-size: 14px;
@@ -600,6 +597,13 @@ ul, ol {
   color: #23527c;
 }
 
+#blog_post {
+  margin: 50px 0;
+}
+#blog_post .post_card_design {
+  padding: 0;
+  padding-right: 25px;
+}
 #blog_post .post_card_design .post_card {
   background-size: cover;
   background-position: center;

@@ -57,3 +57,491 @@
         }
     }
 }
+@media (min-width: 1200px) and (max-width: 1400px){
+    #blog_menu {
+        .row {
+            .my_pagination {
+                .myCusPag {
+                    a {
+                    padding: 10px 13px;
+                }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px){
+    #blog_menu .row .my_pagination p {
+        margin-right: 20px;
+        font-size: 13px;
+    }
+    #blog_menu .row .my_pagination .myCusPag a {
+        padding: 10px 11px;
+        font-size: 12px;
+    }
+    #blog_menu .row .view_select p {
+        font-size: 13px;
+    }
+    #blog_post .post_filter ul li button {
+        font-size: 16px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img span {
+        height: 85px;
+        width: 85px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img .post_filter_img_overlay {
+        height: 85px;
+    }
+    #blog_post .post_filter .post_filter_item {
+        &:hover{
+            .post_filter_img_overlay{
+                width: 85px;
+            }
+        }
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li a {
+        font-size: 10px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content h5 {
+        font-size: 13px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img {
+        margin-right: 0px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li span {
+        padding-left: 5px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay article {
+        font-size: 13px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li a {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay .card_btn {
+        padding: 12px 22px;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay {
+        margin: 0 30px;
+        padding: 0 40px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    #blog_post .nxt_btn a {
+        font-size: 14px;
+    }
+    #blog_post .post_filter .categories h4 {
+        font-size: 16px;
+    }
+    #blog_post .post_filter .categories ul li {
+        margin: 6px 0;
+    }
+    #blog_post .post_filter .tags h4 {
+        font-size: 16px;
+    }
+    #blog_post .post_filter .tags a {
+        padding: 10px 12px;
+        margin-right: 6px;
+        margin-bottom: 8px;
+    }
+    #blog_post .post_filter .video_part {
+        height: 250px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #blog_menu .row .view_icon a i {
+        font-size: 20px;
+    }
+    #blog_menu .row .view_icon a {
+        height: 35px;
+        width: 35px;
+        border: 1px solid var(--secondary_color);
+        display: inline-block;
+        text-align: center;
+        line-height: 35px;
+        transition: all linear 0.3s;
+    }
+    #blog_menu .row .view_select p {
+        font-size: 12px;
+    }
+    #blog_menu .row .view_select select {
+        font-size: 13px;
+        padding: 9px 11px;
+        margin-right: 10px;
+    }
+    #blog_post .post_filter ul li button {
+        font-size: 15px;
+        padding-right: 26px;
+        margin-bottom: 10px;
+    }
+    #blog_menu .row .my_pagination .myCusPag a {
+        padding: 8px 7px;
+        font-size: 13px;
+    }
+    #blog_menu .row .my_pagination p {
+        margin-right: 6px;
+        font-size: 12px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img {
+        margin-right: -10px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img span {
+        height: 70px;
+        width: 70px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img .post_filter_img_overlay {
+        height: 70px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img .post_filter_img_overlay a {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+    #blog_post .post_filter .post_filter_item {
+        padding: 16px 0;
+    }
+    #blog_post .post_filter .post_filter_item {
+        &:hover{
+            .post_filter_img_overlay{
+                width: 70px;
+            }
+        }
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content h5 {
+        font-size: 12px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li span {
+        padding-left: 0px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li a {
+        font-size: 10px;
+    }
+    #blog_post .post_filter .categories h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #blog_post .post_filter .categories ul li {
+        margin: 4px 0;
+    }
+    #blog_post .post_filter .categories ul li a {
+        font-size: 13px;
+    }
+    #blog_post .post_filter .tags h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #blog_post .post_filter .tags a {
+        padding: 8px 10px;
+        font-size: 12px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    #blog_post .post_filter .video_part {
+        height: 240px;
+    }
+    #blog_post .nxt_btn a {
+        font-size: 14px;
+    }
+    #blog_post .post_card_design .post_card {
+        height: 350px;
+        margin-bottom: 170px;
+    }
+    #blog_post .post_card_design {
+        padding: 0;
+        padding-right: 10px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay {
+        bottom: -35%;
+        margin: 0 20px;
+        padding: 0 20px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay h4 {
+        font-size: 15px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul {
+        padding: 8px 0;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li {
+        padding-right: 8px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li a {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li span {
+        padding-left: 5px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay article {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay .card_btn {
+        padding: 10px 15px;
+        margin-top: 16px;
+        font-size: 12px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    #blog_post .post_card_design {
+        padding: 0;
+        padding-right: 5px;
+    }
+    #blog_post .post_card_design .post_card {
+        height: 350px;
+        margin-bottom: 150px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay {
+        bottom: -35%;
+        margin: 0 -1px;
+        padding: 0 10px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay h4 {
+        font-size: 13px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul {
+        padding: 2px 0;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li {
+        padding-right: 0px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li a {
+        font-size: 10px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li span {
+        padding-left: 4px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay article {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay .card_btn {
+        padding: 8px 15px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    #blog_menu .row .view_icon a {
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+    }
+    #blog_menu .row .view_icon a i {
+        font-size: 16px;
+    }
+    #blog_menu .row .view_select p {
+        font-size: 10px;
+    }
+    #blog_menu .row .view_select select {
+        font-size: 12px;
+        padding: 7px 8px;
+        margin-right: 4px;
+    }
+    .my_pagination.col-sm-4.align-items-center.d-flex {
+        padding: 0;
+    }
+    #blog_menu .row .my_pagination p {
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    #blog_menu .row .my_pagination .myCusPag a {
+        padding: 8px 6px;
+        font-size: 10px;
+    }
+    #blog_post .post_filter ul li button {
+        font-size: 14px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img {
+        margin-right: -10px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img span {
+        height: 60px;
+        width: 60px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img .post_filter_img_overlay {
+        height: 60px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img .post_filter_img_overlay a {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 8px;
+    }
+    #blog_post .post_filter .post_filter_item {
+        padding: 10px 0;
+    }
+    #blog_post .post_filter .post_filter_item {
+        &:hover{
+            .post_filter_img_overlay{
+                width: 60px;
+            }
+        }
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content {
+        padding-right: 0;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content h5 {
+        font-size: 10px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li {
+        padding-right: 0px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li a {
+        font-size: 8px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li span {
+        padding-left: 0px;
+    }
+    #blog_post .post_filter .categories h4 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    #blog_post .post_filter .categories ul li {
+        margin: 0px;
+    }
+    #blog_post .post_filter .categories ul li a {
+        font-size: 11px;
+    }
+    #blog_post .post_filter .tags h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    #blog_post .post_filter .tags a {
+        padding: 6px 6px;
+        font-size: 11px;
+        margin-right: 2px;
+        margin-bottom: 6px;
+    }
+    #blog_post .post_filter .video_part {
+        height: 190px;
+    }
+    #blog_post .nxt_btn a {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
+@media (min-width: 320px) and (max-width: 576px){
+    .page_banner .container .row .banner_content h2 {
+        font-size: 27px;
+        padding-bottom: 14px;
+    }
+    .page_banner .container .row .banner_content h6 {
+        font-size: 15px;
+    }
+    .page_banner .container .row .banner_content h6 i {
+        font-size: 10px;
+    }
+    .page_banner .container .row .banner_content h6 span {
+        font-size: 14px;
+    }
+    .view_icon {
+        margin-bottom: 10px;
+    }
+    #blog_menu .row {
+        padding: 10px 6px;
+        margin: 0;
+        border: 1px solid #dddddd;
+    }
+    #blog_menu .row .view_icon a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    #blog_menu .row .view_icon a i {
+        font-size: 16px;
+    }
+    .view_select{
+        text-align: left!important;
+    }
+    #blog_menu .row .view_select select {
+        font-size: 13px;
+        padding: 8px 10px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+    }
+    #blog_menu .row .view_select p {
+        font-size: 12px;
+    }
+    #blog_menu .row .my_pagination .myCusPag a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    #blog_menu .row .my_pagination p {
+        margin-right: 8px;
+        font-size: 12px;
+    }
+    #blog_post .post_card_design {
+        padding: 12px;
+    }
+    #blog_post .post_card_design .post_card {
+        height: 300px;
+        margin-bottom: 150px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay {
+        bottom: -30%;
+        margin: 0 0px;
+        padding: 0 20px;
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay h4 {
+        font-size: 16px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul {
+        padding: 10px 0;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li {
+        padding-right: 10px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li a {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li span {
+        padding-left: 4px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay article {
+        font-size: 12px;
+    }
+    #blog_post .post_card_design .post_card .card_overlay .card_btn {
+        padding: 10px 16px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    #blog_post .nxt_btn a {
+        font-size: 14px;
+        padding: 14px 0;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 320px) and (max-width: 380px){
+    #blog_menu .row .view_select select {
+        margin-right: 10px!important;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li a {
+        font-size: 10px!important;
+    }
+    #blog_post .post_card_design .post_card .card_overlay ul li {
+        padding-right: 0px!important;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_img {
+        margin-right: 10px;
+    }
+    #blog_post .post_filter .post_filter_item .post_filter_content ul li a {
+        font-size: 10px;
+    }
+    #blog_post .post_filter ul{
+        li button{
+            padding: 0 12px;
+        }
+    }
+    #blog_post .post_card_design .post_card .card_overlay {
+        bottom: -30%;
+        margin: 0 0px;
+        padding: 0 20px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+}

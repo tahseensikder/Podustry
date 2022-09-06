@@ -610,7 +610,6 @@ ul,ol{
             }
         }
         .my_pagination{
-            justify-content: end;
             p{
                 margin-right: 30px;
                 font-size: 14px;
@@ -636,7 +635,10 @@ ul,ol{
 }
 
 #blog_post{
+    margin: 50px 0;
     .post_card_design{
+        padding: 0;
+        padding-right: 25px;
         .post_card{
             background-size: cover;
             background-position: center;
