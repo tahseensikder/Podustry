@@ -50,6 +50,10 @@
     padding: 10px 16px;
     font-size: 12px;
   }
+  #blog_grid .nxt_btn a {
+    font-size: 14px;
+    padding: 14px 0;
+  }
 }
 @media (min-width: 420px) and (max-width: 576px) {
   #portfolio .portfolio_img {
@@ -88,6 +92,10 @@
   #blog_grid .blog_grid_card .blog_grid_content .read_btn {
     padding: 12px 18px;
     font-size: 13px;
+  }
+  #blog_grid .nxt_btn a {
+    font-size: 14px;
+    padding: 14px 0;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -518,6 +526,10 @@
   #blog_grid .blog_grid_card .blog_grid_content .read_btn {
     padding: 10px 15px;
     font-size: 11px;
+  }
+  #blog_grid .nxt_btn a {
+    font-size: 15px;
+    padding: 15px 0;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {

@@ -964,4 +964,22 @@ ul, ol {
 #blog_grid .blog_grid_card .blog_grid_content .read_btn:hover {
   background-color: var(--primary_color);
   outline-color: transparent;
+}
+#blog_grid .nxt_btn {
+  margin-bottom: 80px;
+}
+#blog_grid .nxt_btn a {
+  display: block;
+  font-size: 16px;
+  color: var(--heading_text);
+  padding: 16px 0;
+  background-color: var(--primary_color);
+  border: 1px solid var(--white_text);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all linear 0.5s;
+}
+#blog_grid .nxt_btn a:hover {
+  background-color: var(--footer_text);
+  border-color: var(--footer_text);
 }/*# sourceMappingURL=style.css.map */
