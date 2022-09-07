@@ -918,3 +918,103 @@ ul,ol{
     }
 }
 // *** BLOG LIST VIEW PAGE HERE ***
+
+
+// *** BLOG GRID VIEW PAGE HERE ***
+#blog_grid{
+    margin-top: 30px;
+    .blog_grid_card{
+        .blog_grid_img{
+            position: relative;
+            display: block;
+            z-index: 2;
+            transform: translateY(10%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+            img{
+                width: 100%;
+            }
+            .blog_grid_img_overlay{
+                position: absolute;
+                text-align: center;
+                top: 0;
+                height: 0%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--overlay);
+                visibility: hidden;
+                opacity: 0;
+                transition: all ease-in-out 0.5s;
+                span{
+                    height: 40px;
+                    width: 40px;
+                    background-color: var(--primary_color);
+                    font-size: 16px;
+                    color: var(--heading_text);
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        outline: 1px solid var(--primary_color);
+                        background-color: transparent;
+                        color: var(--primary_color);
+                    }
+                }
+            }
+            &:hover .blog_grid_img_overlay{
+                visibility: visible;
+                opacity: 1;
+                height: 100%;
+            }
+        }
+        .blog_grid_content{
+            position: relative;
+            text-align: center;
+            padding: 90px 30px 20px 30px;
+            border: 1px solid var(--footer_text);
+            transform: translateY(-12%);
+            border-top: none;
+            h4{
+                font-size: 20px;
+                font-weight: 400;
+            }
+            ul{
+                text-align: center;
+                li{
+                    display: inline-block;
+                    padding: 4px;
+                    a{
+                        font-size: 15px;
+                        color: var(--secondary_color);
+                        span{
+                            padding-left: 2px;
+                        }
+                    }
+                }
+            }
+            p{
+                font-size: 15px;
+                padding: 10px;
+            }
+            .read_btn{
+                padding: 13px 20px;
+                outline: 1px solid var(--heading_text);
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: var(--heading_text);
+                background-color: var(--white_text);
+                transition: all ease-in-out 0.5s;
+                &:hover{     
+                    background-color: var(--primary_color);
+                    outline-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+// *** BLOG GRID VIEW PAGE HERE ***
