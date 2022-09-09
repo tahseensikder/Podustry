@@ -54,6 +54,13 @@
     font-size: 14px;
     padding: 14px 0;
   }
+  #newsletter .container .form_sec {
+    height: 400px;
+  }
+  #newsletter .container .form_sec form {
+    margin: 0px 10px;
+    padding: 10px 0;
+  }
 }
 @media (min-width: 420px) and (max-width: 576px) {
   #portfolio .portfolio_img {
@@ -96,6 +103,16 @@
   #blog_grid .nxt_btn a {
     font-size: 14px;
     padding: 14px 0;
+  }
+  #newsletter .container {
+    background-image: none;
+  }
+  #newsletter .container .form_sec {
+    position: initial;
+  }
+  #newsletter .container .form_sec form {
+    margin: 0px 30px;
+    padding: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -222,6 +239,9 @@
   #blog_grid .blog_grid_card .blog_grid_content .read_btn {
     padding: 10px 15px;
     font-size: 13px;
+  }
+  #newsletter .container {
+    background-position: inherit;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -369,6 +389,16 @@
   #blog_grid .blog_grid_card .blog_grid_content .read_btn {
     padding: 12px 18px;
     font-size: 13px;
+  }
+  #newsletter .container {
+    background-position: inherit;
+  }
+  #newsletter .container .form_sec {
+    top: 40px;
+    right: 45px;
+  }
+  #newsletter .container .form_sec form {
+    margin: 30px 30px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -531,6 +561,10 @@
     font-size: 15px;
     padding: 15px 0;
   }
+  #newsletter .container .form_sec form {
+    margin: 0px 30px;
+    padding: 20px;
+  }
 }
 @media (min-width: 320px) and (max-width: 576px) {
   .page_banner .container .row .banner_content h2 {
@@ -624,6 +658,21 @@
     padding: 14px 0;
     margin-top: 20px;
   }
+  #contact_info .row .contact_info_item span {
+    font-size: 22px;
+  }
+  #contact_info .row .contact_info_item p {
+    font-size: 12px;
+  }
+  #newsletter .section_heading h3 {
+    font-size: 30px;
+  }
+  #newsletter .section_heading p {
+    font-size: 14px;
+  }
+  #newsletter .container .form_sec form #submit {
+    font-size: 14px;
+  }
 }
 @media (min-width: 320px) and (max-width: 380px) {
   #blog_menu .row .view_select select {
@@ -650,5 +699,23 @@
     padding: 0 20px;
     padding-top: 50px;
     padding-bottom: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #contact_info .row .contact_info_item {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 10px 0;
+  }
+  #contact_info .row .contact_info_item p::before {
+    display: none;
+  }
+  #contact_info .row .contact_info_item:last-child {
+    border-color: transparent;
+  }
+  #newsletter .container {
+    background-image: none;
+  }
+  #newsletter .container .form_sec {
+    position: initial;
   }
 }/*# sourceMappingURL=responsive.css.map */

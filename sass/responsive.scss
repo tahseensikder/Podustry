@@ -68,6 +68,13 @@
             }
         }
     }
+    #newsletter .container .form_sec {
+        height: 400px;
+        form{
+            margin: 0px 10px;
+            padding: 10px 0;
+        }
+    }
 }
 @media (min-width: 420px) and (max-width: 576px){
     #portfolio {
@@ -121,6 +128,18 @@
             }
         }
     }
+    #newsletter .container 
+    {
+        background-image: none;
+        .form_sec {
+            position: initial;
+            form {
+                margin: 0px 30px;
+                padding: 20px;
+            }
+        }
+    }
+
 }
 @media (min-width: 1200px) and (max-width: 1400px){
     #blog_menu {
@@ -276,6 +295,9 @@
                 }
             }
         }
+    }
+    #newsletter .container {
+        background-position: inherit;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -436,6 +458,16 @@
                 }
             }
         }
+    }
+    #newsletter .container {
+        background-position: inherit;
+    }
+    #newsletter .container .form_sec {
+        top: 40px;
+        right: 45px;
+    }
+    #newsletter .container .form_sec form {
+        margin: 30px 30px;
     }
 }
 @media (min-width: 576px) and (max-width: 768px){
@@ -611,6 +643,14 @@
             }
         }
     }
+    #newsletter .container 
+    { .form_sec {
+            form {
+                margin: 0px 30px;
+                padding: 20px;
+            }
+        }
+    }
 }
 @media (min-width: 320px) and (max-width: 576px){
     .page_banner .container .row .banner_content h2 {
@@ -704,6 +744,27 @@
         padding: 14px 0;
         margin-top: 20px;
     }
+    #contact_info .row .contact_info_item{
+        span {
+            font-size: 22px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    #newsletter {
+        .section_heading{
+            h3 {
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .container .form_sec form #submit {
+            font-size: 14px;
+        }
+    }
 }
 @media (min-width: 320px) and (max-width: 380px){
     #blog_menu .row .view_select select {
@@ -732,5 +793,24 @@
         padding: 0 20px;
         padding-top: 50px;
         padding-bottom: 10px;
+    }
+}
+@media (min-width: 320px) and (max-width:768px){
+    #contact_info .row .contact_info_item{
+        border-bottom: 1px solid #c4c4c4;
+        padding: 10px 0;
+        p::before {
+            display: none;
+        }
+        &:last-child{
+            border-color: transparent;
+        }
+    }
+    #newsletter .container 
+    {
+        background-image: none;
+        .form_sec {
+            position: initial;
+        }
     }
 }
