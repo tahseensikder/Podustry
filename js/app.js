@@ -99,11 +99,6 @@ $(function(){
          // instead of a settings object
     ]
   })
-// Counter Up 
-  $('#num1').countMe(7,5);
-  $('#num2').countMe(9,6);
-  $('#num3').countMe(10,8);
-  $('#num4').countMe(11,9);
 // portfolio
    $('.port_slider').slick({
     slidesToShow:4,
@@ -238,6 +233,28 @@ $(function(){
     }
    })
 })
+// CounterUp Starts
+const counterUp = window.counterUp.default
+
+const callback = entries => {
+	entries.forEach( entry => {
+		const el = entry.target
+		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
+			counterUp( el, {
+				duration: 4000,
+				delay: 16,
+			} )
+			el.classList.add( 'is-visible' )
+		}
+	} )
+}
+
+const IO = new IntersectionObserver( callback, { threshold: 1 } )
+
+const el = document.querySelector("#counter_up")
+IO.observe( el )
+// CounterUp Ends
+
 // Homepage ends
 
 // About Us Page starts
