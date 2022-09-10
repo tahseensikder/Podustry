@@ -1361,7 +1361,8 @@ nav #myCusNav ul li:hover a::before{
     margin: auto;
 }
 #web_icon .web_icon_slider .web_item img{
-    width: 100%;
+    width: 85%;
+    height: 80%;
 }
 #web_icon .web_icon_slider .web_item.slick-center img{
     box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.54);

@@ -37,11 +37,21 @@
         padding: 5px 0;
         text-align: center;
     }
-    nav #myCusNav ul li::after,
+    /* nav #myCusNav ul li::after,
     nav #myCusNav ul li::before,
     nav #myCusNav ul li a::after,
     nav #myCusNav ul li a::before{
         display: none;
+    } */
+    div#myCusNav {
+        text-align: center;
+    }
+    ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+        display: inline-block;
+    }
+    nav #myCusNav ul li {
+        display: block;
+        margin-right: 0px;
     }
     #about .about_content h3 {
         text-align: center;
