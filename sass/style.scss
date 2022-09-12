@@ -184,8 +184,6 @@ ul,ol{
 
 // *** ABOUT PAGE HERE ***
 
-
-//About_Produstry starts here
 #about_produstry{
     margin: 120px 0;
     .about_produstry_img{
@@ -226,6 +224,7 @@ ul,ol{
     }
 
 }
+
 .about_mission{
     .about_produstry_content{
         padding-right: 0px!important;
@@ -257,9 +256,7 @@ ul,ol{
         }
     }
 }
-// About_Produstry ends here
 
-// Our Team starts here
 #our_team{
     .team_arrow{
         .team_left{
@@ -353,6 +350,7 @@ ul,ol{
         }
     }
 }
+
 #our_team .team_slider_item.slick-center{
     .team_content{
         clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0 100%);
@@ -374,10 +372,8 @@ ul,ol{
         transition: all ease-in-out 0.3s;
     }
 }
-// Our Team ends here
 
 // *** ABOUT PAGE HERE ***
-
 
 // *** PORTFOLIO PAGE HERE ***
 #portfolio{
@@ -417,7 +413,6 @@ ul,ol{
     }
 }
 // *** PORTFOLIO PAGE HERE ***
-
 
 // *** CONTACT PAGE HERE ***
 #contact_info{
@@ -564,7 +559,6 @@ ul,ol{
     }
 }
 // *** CONTACT PAGE HERE ***
-
 
 // *** BLOG LIST VIEW PAGE HERE ***
 #blog_menu{
@@ -919,7 +913,6 @@ ul,ol{
 }
 // *** BLOG LIST VIEW PAGE HERE ***
 
-
 // *** BLOG GRID VIEW PAGE HERE ***
 #blog_grid{
     margin-top: 30px;
@@ -1034,5 +1027,4 @@ ul,ol{
         }
     }
 }
-
 // *** BLOG GRID VIEW PAGE HERE ***

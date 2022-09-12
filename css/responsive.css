@@ -1,4 +1,4 @@
-/* Header starts here */
+/* Homepage Only*/
 @media (min-width: 320px) and (max-width: 992px) {
     header .addText {
         text-align: center;
@@ -916,8 +916,4 @@
         height: 530px;
     }
 }
-/* Header Ends here */
-
-/* nav starts here */
-
-/* nav ends here */
+/* Homepage Only*/
